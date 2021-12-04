@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>My Portofolio | JangDo</title>
+</head>
+<body id="home">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color :rgb(15,102,19)">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cpu-fill" viewBox="0 0 16 16">
+        <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+        <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z"/>
+      </svg>  <strong>JangDo</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+              </svg>   Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z" />
+              </svg>   About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#award"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16"> <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" /> <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" /> </svg>
+                Award</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#WorkGroup"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16"> <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /> <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" /> <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" /> </svg>   WorkGroup</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-plus-fill" viewBox="0 0 16 16"> <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z" /> <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z" /> </svg>   Contact</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com/"><img src="img/bootstrap.png" alt="bootstr" width="30" height="24"><strong>Bootstrap</strong></a>
+          </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+  <!-- Home -->
+  <section id="home"class="jumbotron text-center">
+    <img src="img/Doni.png" alt="Donny" width="200" class="rounded-circle img-thumbnail bg-success" />
+    <h1 class="display-4"><strong>JangDo</strong></h1>
+    <p class="lead">
+      Student | Sekretaris | Programer | Mathematics | Network Enginner | IT
+    </p>
+    <p>
+      <a class="btn btn-success" href="index2.html" role="button">Data Diri</a>
+    </p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,320L57.6,160L115.2,192L172.8,256L230.4,128L288,192L345.6,32L403.2,128L460.8,32L518.4,64L576,0L633.6,128L691.2,256L748.8,288L806.4,160L864,224L921.6,96L979.2,320L1036.8,224L1094.4,96L1152,192L1209.6,256L1267.2,256L1324.8,192L1382.4,64L1440,160L1440,320L1382.4,320L1324.8,320L1267.2,320L1209.6,320L1152,320L1094.4,320L1036.8,320L979.2,320L921.6,320L864,320L806.4,320L748.8,320L691.2,320L633.6,320L576,320L518.4,320L460.8,320L403.2,320L345.6,320L288,320L230.4,320L172.8,320L115.2,320L57.6,320L0,320Z"></path></svg>
+  </section>
+  <!-- End Home -->
+  <!-- about -->
+  <section id="about">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2><strong><strong>About Me :</strong></strong></h2>
+        </div>
+        <br><br><br>
+        <div class="row justify-content-center fs-5 ">
+          <div class="col-md-6 mb-4">
+            <em><h5>Saya adalah orang yang bisa mengambil keputusan dengan cepat dan tepat, bahkan saat berada pada situasi genting atau di bawah tekanan. Bagi saya, setiap pekerjaan adalah penting. Mengerjakannya dengan teliti dan semaksimal mungkin adalah bentuk tanggung jawab saya.</h5></em>
+          </div>
+          <div class="col-md-6 mb-4">
+            <em><h5>Lahir diIndramayu, 18 Maret 2005. status Pelajar dengan berkegiatan sehari-hari di OSIS SMK Bangun Bangsa Mandiri Indramayu. saya adalah orang sangat antusias dengan hal yang berbau teknologi yang mengarahkan kita untuk ke masa depan yang lebih baik</h5></em>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(214, 255, 212)" fill-opacity="1" d="M0,192L0,320L60,320L60,32L120,32L120,64L180,64L180,0L240,0L240,224L300,224L300,192L360,192L360,32L420,32L420,32L480,32L480,160L540,160L540,96L600,96L600,160L660,160L660,64L720,64L720,64L780,64L780,64L840,64L840,192L900,192L900,32L960,32L960,224L1020,224L1020,256L1080,256L1080,192L1140,192L1140,128L1200,128L1200,224L1260,224L1260,32L1320,32L1320,0L1380,0L1380,224L1440,224L1440,320L1380,320L1380,320L1320,320L1320,320L1260,320L1260,320L1200,320L1200,320L1140,320L1140,320L1080,320L1080,320L1020,320L1020,320L960,320L960,320L900,320L900,320L840,320L840,320L780,320L780,320L720,320L720,320L660,320L660,320L600,320L600,320L540,320L540,320L480,320L480,320L420,320L420,320L360,320L360,320L300,320L300,320L240,320L240,320L180,320L180,320L120,320L120,320L60,320L60,320L0,320L0,320Z"></path></svg>
+  </section>
+  <!-- end about-->
+  <!-- award -->
+  <section id="award" style="background-color: rgb(214, 255, 212)">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h2><strong><strong>My Award</strong></strong></h2>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+        <div class="col-4 mb-3">
+          <div class="card">
+            <img src="img/award/1(3x2).jpg" class="card-img-top img-thumbnail bg-success" alt="award">
+          </div>
+        </div>
+        <div class="col-4 mb-3">
+          <div class="card">
+            <img src="img/award/2(3x2).jpg" class="card-img-top img-thumbnail bg-success" alt="award">
+          </div>
+        </div>
+        <div class="col-4 mb-3">
+          <div class="card">
+            <img src="img/award/2(3x2).jpg" class="card-img-top img-thumbnail bg-success" alt="award">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 mb-3">
+          <img src="img/award/2(3x2).jpg" class="card-img-top img-thumbnail bg-success" alt="award">
+        </div>
+        <div class="col-4 mb-3">
+          <img src="img/award/2(3x2).jpg" class="card-img-top img-thumbnail bg-success" alt="award">
+        </div>
+        <div class="col-4 mb-3">
+          <img src="img/award/2(3x2).jpg" class="card-img-top img-thumbnail bg-success" alt="award">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 mb-3">
+          <img src="img/award/2(3x2).jpg" class="card-img-top img-thumbnail bg-success" alt="award">
+        </div>
+        <div class="col-4 mb-3">
+          <img src="img/award/2(3x2).jpg" class="card-img-top img-thumbnail bg-success" alt="award">
+        </div>
+        <div class="col-4 mb-3">
+          <img src="img/award/2(3x2).jpg" class="card-img-top img-thumbnail bg-success" alt="award">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 mb-3">
+
+        </div>
+        <div class="col-4 mb-3">
+          <img src="img/award/2(3x2).jpg" class="card-img-top img-thumbnail bg-success" alt="award">
+        </div>
+        <div class="col-4 mb-3">
+
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L12,181.3C24,203,48,245,72,261.3C96,277,120,267,144,240C168,213,192,171,216,149.3C240,128,264,128,288,154.7C312,181,336,235,360,218.7C384,203,408,117,432,101.3C456,85,480,139,504,160C528,181,552,171,576,160C600,149,624,139,648,122.7C672,107,696,85,720,85.3C744,85,768,107,792,106.7C816,107,840,85,864,69.3C888,53,912,43,936,64C960,85,984,139,1008,160C1032,181,1056,171,1080,176C1104,181,1128,203,1152,197.3C1176,192,1200,160,1224,160C1248,160,1272,192,1296,208C1320,224,1344,224,1368,234.7C1392,245,1416,267,1428,277.3L1440,288L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path></svg>
+  </section>
+  <!-- end award -->
+  <!-- work group -->
+  <section id="WorkGroup">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h2><strong><strong>My WorkGroup</strong></strong></h2>
+          <br><br><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card-md-2 mb-3 shadow">
+            <img src="img/workgroup/1.jpg" class="card-img-top" alt="sosis">
+            <div class="card-body">
+              <p class="card-text">
+                Organisasi Siswa Intra Sekolah (2020 - 2021)
+              </p>
+            </div>
+
+          </div>
+          <div class="col">
+            <div class="card-md-2 mb-3 shadow">
+              <img src="img/workgroup/2.jpg" class="card-img-top" alt="sosis">
+              <div class="card-body">
+                <p class="card-text">
+                  Pramuka Baranawa (2020-2021)
+                </p>
+              </div>
+
+            </div>
+            <div class="col">
+              <div class="card-md-2 mb-3 shadow">
+                <img src="img/workgroup/3.jpg" class="card-img-top" alt="sosis">
+                <div class="card-body">
+                  <p class="card-text">
+                    OSIS SMK BBM Indramayu (2020-2021)
+                  </p>
+                </div>
+
+              </div>
+              <div class="col">
+                <div class="card-md-2 mb-3 shadow">
+                  <img src="img/workgroup/4.jpg" class="card-img-top" alt="sosis">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Pelajar Peduli Lingkungan (2021)
+                    </p>
+                  </div>
+
+                </div>
+                <div class="col">
+                  <div class="card-md-2 mb-3 shadow">
+                    <img src="img/workgroup/5.jpg" class="card-img-top" alt="sosis">
+                    <div class="card-body">
+                      <p class="card-text">
+                        PRAKERIN TKJ (2022).
+                      </p>
+                    </div>
+
+                  </div>
+                  <div class="col">
+                    <div class="card-md-2 mb-3 shadow">
+                      <img src="img/workgroup/6.jpg" class="card-img-top" alt="sosis">
+                      <div class="card-body">
+                        <p class="card-text">
+                          END (2019 - NOW)
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(214, 255, 212)" fill-opacity="1" d="M0,96L51.4,0L102.9,256L154.3,320L205.7,288L257.1,32L308.6,64L360,160L411.4,128L462.9,160L514.3,96L565.7,128L617.1,256L668.6,288L720,32L771.4,32L822.9,256L874.3,96L925.7,192L977.1,192L1028.6,96L1080,0L1131.4,320L1182.9,224L1234.3,224L1285.7,32L1337.1,288L1388.6,192L1440,32L1440,320L1388.6,320L1337.1,320L1285.7,320L1234.3,320L1182.9,320L1131.4,320L1080,320L1028.6,320L977.1,320L925.7,320L874.3,320L822.9,320L771.4,320L720,320L668.6,320L617.1,320L565.7,320L514.3,320L462.9,320L411.4,320L360,320L308.6,320L257.1,320L205.7,320L154.3,320L102.9,320L51.4,320L0,320Z"></path></svg>
+              </section>
+              <!-- end work group -->
+              <!-- contact -->
+              <section id="contact">
+                <div class="container">
+                  <div class="row text-center">
+                    <div class="col">
+                      <h2><strong><strong>Contact Me:</strong></strong></h2>
+                    </div>
+                  </div>
+                  <br><br><br>
+                  <div class="row">
+                    <div class="col">
+                      <form action="" class="mb-3">
+                        <table align="center">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <label for="name" class="name">Nama Lengkap :</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="name">
+                              </div>
+                              <br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for="email" class="form-label">Alamat Email :</label>
+                              <input type="email" class="form-control" id="email" aria-describedby="email">
+                              <div id="email" class="form-text">
+                                <em>kami tidak akan pernah membagikan email anda kepada orang lain.</em>
+                              </div>
+                            </div>
+                            <br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="Textarea" class="form-label">Ulasan :</label>
+                            <textarea class="form-control" id="Textarea"rows="3">
+                            </textarea>
+                          </div>
+                          <br>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <button type="submit" class="btn btn-success">Kirim</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(15,102,19)" fill-opacity="1" d="M0,0L0,160L43.6,160L43.6,288L87.3,288L87.3,128L130.9,128L130.9,256L174.5,256L174.5,288L218.2,288L218.2,224L261.8,224L261.8,0L305.5,0L305.5,32L349.1,32L349.1,320L392.7,320L392.7,64L436.4,64L436.4,256L480,256L480,256L523.6,256L523.6,96L567.3,96L567.3,192L610.9,192L610.9,160L654.5,160L654.5,32L698.2,32L698.2,128L741.8,128L741.8,160L785.5,160L785.5,288L829.1,288L829.1,256L872.7,256L872.7,288L916.4,288L916.4,160L960,160L960,96L1003.6,96L1003.6,256L1047.3,256L1047.3,192L1090.9,192L1090.9,32L1134.5,32L1134.5,160L1178.2,160L1178.2,224L1221.8,224L1221.8,160L1265.5,160L1265.5,96L1309.1,96L1309.1,160L1352.7,160L1352.7,256L1396.4,256L1396.4,32L1440,32L1440,320L1396.4,320L1396.4,320L1352.7,320L1352.7,320L1309.1,320L1309.1,320L1265.5,320L1265.5,320L1221.8,320L1221.8,320L1178.2,320L1178.2,320L1134.5,320L1134.5,320L1090.9,320L1090.9,320L1047.3,320L1047.3,320L1003.6,320L1003.6,320L960,320L960,320L916.4,320L916.4,320L872.7,320L872.7,320L829.1,320L829.1,320L785.5,320L785.5,320L741.8,320L741.8,320L698.2,320L698.2,320L654.5,320L654.5,320L610.9,320L610.9,320L567.3,320L567.3,320L523.6,320L523.6,320L480,320L480,320L436.4,320L436.4,320L392.7,320L392.7,320L349.1,320L349.1,320L305.5,320L305.5,320L261.8,320L261.8,320L218.2,320L218.2,320L174.5,320L174.5,320L130.9,320L130.9,320L87.3,320L87.3,320L43.6,320L43.6,320L0,320L0,320Z"></path></svg>
+        </section>
+        <!-- end contact -->
+        <!-- footer -->
+        <footer style="background-color :rgb(15,102,19)" class="text-white text-center pb-5">
+          <p>
+            Created with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill bg-danger" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+            </svg> by <a href="https://www.instagram.com/et.donny/"><strong>JangDo</strong></a>
+          </p>
+          <div class="container">
+            <div class="row text-center mb-3">
+              <div class="col">
+                <h2><strong><strong>Social Media</strong></strong></h2>
+              </div>
+              <br><br><br>
+              <div class="row justify-content-center fs-5 ">
+                <div class="col-md-6 mb-4">
+                  <a href="https://www.instagram.com/et.donny/" class="link-danger"><em><h5><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg> et.Donny</h5></em></a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <a href="https://www.instagram.com/et.donny/" class="link-danger"><em><h5><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg> JangDo</h5></em></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- end footer -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      </body>
+    </html>
