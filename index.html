@@ -10,8 +10,6 @@
 
   <!-- my css -->
   <link rel="stylesheet" href="style.css">
-<!-- aos -->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <title>My Portofolio | JangDo</title>
 </head>
@@ -59,9 +57,8 @@
   <!-- END NAVBAR -->
   <!-- Home -->
   <section id="home"class="jumbotron text-center">
-    <img src="img/Doni.png" alt="Donny" width="200" class="rounded-circle img-thumbnail bg-success" data-aos="zoom-in-down"data-aos-easing="ease-in-back"
-    data-aos-offset="200"/>
-    <h1 class="display-4"><strong>Donny</strong></h1>
+    <img src="img/Doni.png" alt="Donny" width="200" class="rounded-circle img-thumbnail bg-success" />
+    <h1 class="display-4"><strong>JangDo</strong></h1>
     <p class="lead">
       Student | Sekretaris | Programer | Mathematics | Network Enginner | IT
     </p>
@@ -242,13 +239,13 @@
                   <br><br><br>
                   <div class="row">
                     <div class="col">
-                      <form action="" class="mb-3">
+                      <form action="" class="mb-3" name="submit-to-google-sheet">
                         <table align="center">
                           <tbody>
                             <tr>
                               <td>
                                 <label for="name" class="name">Nama Lengkap :</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="name">
+                                <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="name" placeholder="Nama">
                               </div>
                               <br>
                             </td>
@@ -256,7 +253,7 @@
                           <tr>
                             <td>
                               <label for="email" class="form-label">Alamat Email :</label>
-                              <input type="email" class="form-control" id="email" aria-describedby="email">
+                              <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="Email">
                               <div id="email" class="form-text">
                                 <em>kami tidak akan pernah membagikan email anda kepada orang lain.</em>
                               </div>
@@ -267,7 +264,7 @@
                         <tr>
                           <td>
                             <label for="Textarea" class="form-label">Ulasan :</label>
-                            <textarea class="form-control" id="Textarea"rows="3">
+                            <textarea class="form-control" id="Textarea"rows="3" name="pesan">
                             </textarea>
                           </div>
                           <br>
@@ -276,7 +273,7 @@
 
                       <tr>
                         <td>
-                          <button type="submit" class="btn btn-success">Kirim</button>
+                          <button type="submit" class="btn btn-success">Send</button>
                         </td>
                       </tr>
                     </tbody>
@@ -317,12 +314,19 @@
           </div>
         </footer>
         <!-- end footer -->
-<!-- script bootstrap -->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<!-- script aos -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
+        <script>
+          const scriptURL = '<https://script.google.com/macros/s/AKfycbxT45jTxIfKVZI91S1IX8UngArm5pOjV5YcSa2vtMvHCNGOXVRnARPkL3MSri78Vt6L/exec>'
+          const form = document.forms['submit-to-google-sheet']
+        
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => console.log('Success!', response))
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script>
       </body>
     </html>
